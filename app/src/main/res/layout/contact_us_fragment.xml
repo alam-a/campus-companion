@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+
+    <LinearLayout
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="#29B6F6">
+        <EditText
+            android:id="@+id/contactFragmentEditSubject"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Subject"
+            android:inputType="textCapSentences"
+            android:maxLines="2"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#29B6F6">
+
+        <EditText
+            android:id="@+id/contactFragmentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="2dp"
+            android:background="#FFFFFF"
+            android:gravity="top|start"
+            android:hint="Enter your email here"
+            android:inputType="textCapSentences" />
+
+        <Button
+            android:id="@+id/contactFragmentSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/contactFragmentEdit"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="#FFFFFF"
+            android:text="Send"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

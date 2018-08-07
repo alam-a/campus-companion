@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CampusLife</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="about_us">We are students currently doing B.Tech from SRM University, Kattankulathur Campus. We are very passionate about what we are doing and really what we do.\n
+    \nThis all started when we first got admission in this university and it was very difficult to find what was already there. Checking the time-table and mess menu was not easy either as we had to keep screenshots of the time-table and had to click the mess menu from the mess which was not the most efficient thing to do.
+    \n\nTo solve the issues we had, we planned to make this app so that it would be useful to us and at the same time would we helpful to others.
+    \n\nIf you have any issues with the app then kindly report that to us using the contact info from the Contact Us section. We would be very happy to fix the issue. Remember that reporting the issues will help us in making the app better.
+    \n\nIf you love this app and want new features then you can request new features using \'Request New Features\' button available on Contact Us section. Requesting a new feature does not means that the feature will be implemented, because we will implement new feature only after doing some surveys among other users as well.
+    \n\nIf you love this app and want to make this even better then you can join us. You can email us the details about the things you see as necessary to join our team. There is no specific requirement except that you should be ready to learn. You can include your past achievements and provide necessary links, snapshots to prove your claims.
+    \n\n</string>
+
+    <string name="terms_of_use">By Using this app you agree to the following terms:\n\n\n
+    1.You may download and use this application for personal use but cannot use the same for commercial purposes.\n\n
+    2.You can share the app as it is, without modifying it.\n\n
+    3.You agree that the developer is not responsible for any kind of mistakes if found in the data inside the applicaion.\n\n
+    4.You agree that you are using this app from your consent and you alone are responsible for any kind of harm if any caused by probable wrong information available in the application.\n\n
+    5.The terms of this agreement can be changed by the developer without prior notice.</string>
+
+    <string name="mon_sat_pot_par">04:16am\n04:46am\n05:11am\n05:31am\n06:16am\n06:41am\n07:06am\n07:26am\n07:46am\n08:06am\n08:26am\n08:46am\n08:56am\n09:06am\n10:01am\n10:26am\n11:06am\n11:51am\n12:06pm\n12:36pm\n01:21pm\n02:11pm\n02:46pm\n03:11pm\n03:26pm\n04:01pm\n04:31pm\n04:51pm\n05:21pm\n06:31pm\n06:46pm\n07:01pm\n07:16pm\n07:46pm\n08:06pm\n08:31pm\n08:46pm\n09:06pm\n09:31pm\n10:36pm\n11:31pm\n</string>
+    <string name="mon_sat_par_pot">04:02am\n04:47am\n05:07am\n05:27am\n05:47am\n06:02am\n06:17am\n06:37am\n06:52am\n07:02am\n07:12am\n07:45am\n08:32am\n09:03am\n09:45am\n09:57am\n10:21am\n10:57am\n11:09am\n12:02pm\n12:37pm\n01:16pm\n01:54pm\n02:20pm\n02:54pm\n03:32pm\n03:42pm\n04:22pm\n04:39pm\n04:57pm\n05:17pm\n05:45pm\n06:14pm\n06:40pm\n06:47pm\n07:16pm\n07:39pm\n08:03pm\n08:27pm\n08:59pm\n09:27pm\n09:52pm\n10:52pm\n</string>
+    <string name="sun_par_pot">04:02am\n04:47am\n05:07am\n05:27am\n06:02am\n06:37am\n06:52am\n07:12am\n07:45am\n08:32am\n09:07am\n09:42am\n09:57am\n10:22am\n10:57am\n11:07am\n12:07pm\n12:37pm\n01:22pm\n01:52pm\n02:22pm\n02:52pm\n03:47pm\n04:17pm\n04:57pm\n05:17pm\n05:47pm\n06:17pm\n06:37pm\n06:57pm\n07:17pm\n07:47pm\n08:17pm\n08:27pm\n08:59pm\n09:37pm\n09:52pm\n10:57pm\n</string>
+    <string name="sun_pot_par">04:16am\n04:46am\n05:11am\n05:31am\n06:16am\n06:41am\n07:06am\n07:26am\n07:46am\n08:01am\n08:21am\n08:46am\n09:06am\n10:01am\n11:06am\n11:51am\n12:06pm\n12:36pm\n01:21pm\n02:11pm\n02:46pm\n03:11pm\n03:26pm\n04:01pm\n04:31pm\n04:51pm\n05:21pm\n05:49pm\n06:31pm\n06:41pm\n07:01pm\n07:46pm\n08:11pm\n08:46pm\n09:06pm\n09:31pm\n10:36pm\n11:31pm\n</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Mess1"
+        android:orderInCategory="100"
+        android:title="The Royal Cafe"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Mess2"
+        android:orderInCategory="101"
+        android:title="Samhita Hospitality"
+        app:showAsAction="never" />
+
+</menu>

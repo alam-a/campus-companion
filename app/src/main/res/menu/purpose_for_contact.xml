@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Wrong Info. in App"
+        app:showAsAction="never" />
+    <item
+        android:title="Advice to Developer"
+        app:showAsAction="never" />
+    <item
+        android:title="Request New Feature"
+        app:showAsAction="never" />
+    <item
+        android:title="Work with Us"
+        app:showAsAction="never" />
+    <item
+        android:title="Other Reasons"
+        app:showAsAction="never" />
+
+</menu>

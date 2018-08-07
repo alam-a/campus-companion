@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:paddingStart="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="HDFC ATM"
+    android:textSize="24sp"
+    android:background="@color/colorPrimary"
+    android:textColor="#FFFFFF"/>
+    <TextView
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It  is located inside UB. It is active most of the time but can be out of service frequently. Queue is moderate to high in this atm."
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9931138138"
+        android:autoLink="phone"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.google.com"
+        android:autoLink="web"/>
+    <Button
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show On Map"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:background="#00FF00"/>
+</LinearLayout>

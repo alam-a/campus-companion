@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:paddingTop="4dp"
+    android:background="#FFFFFF"
+    tools:context="in.campanion.campuscompanion.AddEdit">
+
+
+    <LinearLayout
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:id="@+id/add_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/add_code_Button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="Add Code"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/add_period_Button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:text="Add Period"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_below="@id/add_header"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/add_edit_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/add_code_Part"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Code : " />
+
+                            <EditText
+                                android:id="@+id/add_ed_code"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:hint="Enter a unique Code"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Subject : " />
+
+                            <EditText
+                                android:id="@+id/add_ed_subject"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:inputType="textCapWords"
+                                android:hint="Enter Subject Name" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Teacher : " />
+
+                            <EditText
+                                android:id="@+id/add_ed_teacher"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:inputType="textCapWords"
+                                android:hint="Enter Teacher's Name" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Room : " />
+
+                            <EditText
+                                android:id="@+id/add_ed_room"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:hint="Enter Class Room No." />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/add_btn_submitCode"
+                                style="@style/add_edit_activity_button"
+                                android:onClick="submitCode"
+                                android:text="Submit" />
+
+                            <Button
+                                android:layout_marginStart="8dp"
+                                style="@style/add_edit_activity_button"
+                                android:onClick="deleteCodeData"
+                                android:text="Delete Code" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_period_Part"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Code : " />
+
+                            <EditText
+                                android:id="@+id/add_ep_code"
+
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:hint="Enter the unique code"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Day : " />
+
+                            <EditText
+                                android:id="@+id/add_ep_day"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:hint="Enter Day order"
+                                android:inputType="number"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Period : " />
+
+                            <EditText
+                                android:id="@+id/add_ep_period"
+                                android:layout_width="0dp"
+                                android:layout_height="45dp"
+                                android:layout_weight="3"
+                                android:hint="Enter Period"
+                                android:inputType="number" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="65dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/add_btn_submitPeriod"
+                                style="@style/add_edit_activity_button"
+                                android:onClick="submitPeriod"
+                                android:text="Submit" />
+
+                            <Button
+                                android:layout_marginStart="8dp"
+                                style="@style/add_edit_activity_button"
+                                android:onClick="deletePeriodData"
+                                android:text="Delete Period" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/add_edit_activity_button"
+                    android:id="@+id/button"
+                    android:onClick="seeCodeData"
+                    android:text="See Code Data" />
+
+                <Button
+                    android:layout_marginStart="8dp"
+                    style="@style/add_edit_activity_button"
+                    android:onClick="seePeriodData"
+                    android:elevation="15dp"
+                    android:text="See Period Data" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="How to set Time Table"
+        android:onClick="tutorial"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="#29B6F6"/>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.campanion.campuscompanion.detail">
+
+
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:id="@+id/dt_name"
+            android:text="India"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:elevation="2dp"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:id="@+id/dt_detail"
+            android:textColor="#FFFFFF"
+            android:text="New Delhi is capital of India. It is a city of very historical importance as it has been the capital city for almost 1000 years for many dynasties. It is the home of monuments like Red Fort, Qutub Minar and Jama Masjid. It is the current seat of national government of India. It also has the honor of being the resting place of Maahatma Gandhi at RaajGhat."
+            android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/dt_website"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:text="www.google.com"
+        android:autoLink="web"/>
+
+    <TextView
+        android:id="@+id/dt_mobile"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9931138138"
+        android:autoLink="phone"
+        android:textColorLink="@color/colorPrimaryDark"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#29B6F6"
+        android:text="Show On Map"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:onClick="takeMeThere"/>
+</LinearLayout>

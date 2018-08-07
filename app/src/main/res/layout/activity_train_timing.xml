@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_train_timing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="in.campanion.campuscompanion.TrainTiming">
+
+    <TextView
+        android:id="@+id/train_timing_source_dest_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potheri to Chennai Park"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"/>
+    <ImageButton
+        android:background="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:layout_toStartOf="@id/train_timing_source_dest_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_swap_vert_black_24dp"
+        android:onClick="changeSourceDest"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/train_timing_day"
+        android:layout_below="@id/train_timing_source_dest_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mon-Sat"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/train_timing_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/train_timing_mon_sat"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/train_timing_sun"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<Button
+        android:layout_marginTop="8dp"
+        style="@style/essential_button"
+        android:onClick="essential"
+        android:text="Shopping" />
+
+    <Button
+        style="@style/essential_button"
+        android:onClick="essential"
+        android:text="Restaurant" />
+
+    <Button
+        style="@style/essential_button"
+        android:onClick="essential"
+        android:text="DrugStore" />
+
+    <Button
+        style="@style/essential_button"
+        android:onClick="trainTiming"
+        android:text="Train Timing" />
+</LinearLayout>
+</ScrollView>

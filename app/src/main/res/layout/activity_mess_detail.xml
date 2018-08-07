@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mess_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:background="#FFFFFF"
+    tools:context="in.campanion.campuscompanion.MessDetail">
+
+    <LinearLayout
+        android:id="@+id/activity_mess_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/show_table_period_detail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:onClick="dayBefore"
+            android:text="Last"
+            android:textSize="16sp"
+            android:id="@+id/button3" />
+
+        <TextView
+            android:id="@+id/dayOfWeek"
+            style="@style/show_table_time_detail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="Monday"
+            android:textSize="22sp" />
+
+        <Button
+            style="@style/show_table_period_detail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:onClick="nextDay"
+            android:text="Next"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/activity_mess_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/activity_mess_detail_header"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/show_table_time_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Breakfast"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/breakfast"
+                    style="@style/show_table_period_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Breakfast"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/show_table_time_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Lunch"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lunch"
+                    style="@style/show_table_period_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Lunch"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/show_table_time_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Snacks"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/snacks"
+                    style="@style/show_table_period_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Snacks"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/show_table_time_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Dinner"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dinner"
+                    style="@style/show_table_period_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Dinner"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Change Mess"
+        android:onClick="changeMess"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

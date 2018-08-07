@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_edit_how"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#FFFFFF"
+    android:scrollbars="none"
+    tools:context="in.campanion.campuscompanion.AddEditHow">
+<LinearLayout
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="There are four steps involved in setting the Time Table as you want. If you follow the steps carefully you would be able to set Time Table correctly."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"
+        android:text="1. Setting The Subject Codes."/>
+    <TextView
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="1.1  Make sure that you save four input fields shown on the screnn namely 'Code', 'Subject','Teacher' and Room. If that's not the case then swipe left to right or click on the 'Add Code' button above. After you have done with this preoceed to the next steps."/>
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.2  In the 'Code' field enter any code like letters A,B,C,etc. or numbers like 1,2,3 etc. or combination of both."/>
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.3  In the 'Subject' field enter the Subject name either partial or full. Consider entering abbreviations for subjects with a long name."/>
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.4  In the 'Teacher' field enter the subject teacher's name.\nIn the 'Room' filed enter the Room No. of the class in which the above entered subject's class will be held."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:text="1.5  After all the above steps are completed click on the 'Submit' button. Repeat the process again for other subjects. After you are done with that click on the 'See Code Data' button to see all the codes with their details."/>
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="'Tip:' Entering all the filed is mandatory, believe us it will give you the best experience."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="2. Setting The Periods."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="2.1 Make Sure that there are only three fileds namely 'Code', 'Day' and 'Period'. If that is not the case then swipe from right to left or click on the 'Add Period' button on the top. After you are done with this proceed to the next steps."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="2.2 In the 'Code' field enter the code you set previously for the subject you want to set the period for."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="2.2 In the 'Day' field enter the Day Order for which you want to set the period for."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="2.3 In the 'Period' field enter the Period of the Day Order you want to set the period for."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="2.4 After completing all the above steps click on the 'Submit' button. Repeat the process again for other periods. After you are done with that you can click on the 'See Period Data' button to see all the Day Order, Period and Code combinations."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="Tip: For updating code or period details, first enter all the relevant details and then click on 'Submit' button. A dialog will appear, choose the appropriate response and the details would be updated."/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:textSize="16sp"
+    android:text="Tip: For deleting a Code, enter the Code in the code field and then click on the 'Delete Code' button. Remember tgat this will delete the code as well as all the periods associated with the code."/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:textSize="16sp"
+    android:text="Tip: For deleting a specific period, enter the Day Order and Period in the 'Day' and 'Period' fields and then click on 'Delete Period' button. It will delete the Day Order and Period combination if present."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textSize="16sp"
+        android:text="Tip: For deleting the details of an entire Day Order, enter the Day Order in the 'Day' field and then click on the 'Delete Period' button. This will delete all the periods in the Day Order entered."/>
+</LinearLayout>
+</ScrollView>
